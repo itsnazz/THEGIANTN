@@ -1,0 +1,30 @@
+{
+  "id": "./the-giant-afterlight.html",
+  "name": "MINI GIANT — NXZ",
+  "short_name": "MINI GIANT",
+  "description": "An original procedural zombie-survival browser game.",
+  "start_url": "./the-giant-afterlight.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "fullscreen",
+    "standalone"
+  ],
+  "orientation": "landscape",
+  "background_color": "#0b141c",
+  "theme_color": "#0b141c",
+  "icons": [
+    {
+      "src": "./afterlight-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./afterlight-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
