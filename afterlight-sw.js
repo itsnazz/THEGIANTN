@@ -1,4 +1,4 @@
-const CACHE='afterlight-nxz-v8';
+const CACHE='afterlight-pap-v11';
 const FILES=['./the-giant-afterlight.html','./afterlight.webmanifest','./afterlight-icon-192.png','./afterlight-icon-512.png','./afterlight-icon-180.png'];
 const CDN=['https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js','https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.core.js','https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/controls/PointerLockControls.js'];
 self.addEventListener('install',event=>event.waitUntil((async()=>{const cache=await caches.open(CACHE);await cache.addAll(FILES);await Promise.allSettled(CDN.map(async url=>{const response=await fetch(url,{mode:'cors'});if(response.ok)await cache.put(url,response);}));})()));
